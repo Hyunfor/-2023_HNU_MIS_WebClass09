@@ -8,19 +8,19 @@
 </head>
 <body>
 	<h2>아이템의 정보 입력 폼</h2>
-	<form method="post" action="MemberServlet">
+	<form method="post" action="ItemServlet">
 		<table>
 			<tr>
 				<td>이름</td>
-				<td><input type="text" name="name" size="20"></td>
+				<td><input type="text" name="name" size="30"></td>
 			</tr>
 			<tr>
-				<td>아이디</td>
-				<td><input type="text" name="userid" size="20"></td>
+				<td>가격</td>
+				<td><input type="text" name="price" size="40"></td>
 			</tr>
 			<tr>
-				<td>비밀번호</td>
-				<td><input type="password" name="pwd" size="20"></td>
+				<td>설명</td>
+				<td><input type="text" name="description" size="100"></td>
 			</tr>
 			<tr>
 				<td><input type="submit" value="등록"></td>

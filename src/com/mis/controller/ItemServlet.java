@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class MemberServlet
  */
-@WebServlet("/MemberServlet")
+@WebServlet("/ItemServlet")
 public class ItemServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -48,7 +48,7 @@ public class ItemServlet extends HttpServlet {
 		// 아이템 등록 정보 가져오기
 		String name = request.getParameter("name");
 		String price = request.getParameter("price");
-		String elucidate = request.getParameter("elucidate");
+		String description = request.getParameter("description");
 		
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -73,7 +73,7 @@ public class ItemServlet extends HttpServlet {
  			//4. 값 채우기
  			pstmt.setString(1, name);
  			pstmt.setString(2, price);
- 			pstmt.setString(3, elucidate);
+ 			pstmt.setString(3, description);
  			
  			//5. 쿼리 실행
  			pstmt.executeUpdate();

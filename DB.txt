@@ -36,3 +36,19 @@ COMMIT;
 SELECT * FROM MEMBER WHERE USERID='somi';
 DELETE FROM MEMBER WHERE USERID='somi';
 COMMIT;
+
+CREATE TABLE ITEM (
+    NAME VARCHAR2(30),
+    price VARCHAR2(40),
+    elucidate VARCHAR2(100)
+);
+
+SELECT * FROM ITEM;
+-- 테이블 삭제
+drop table ITEM;
+
+-- 아이템 정보 추가
+INSERT INTO ITEM VALUES('존윅4포스터', '10,000', '존윅4 영화 포스터');
+INSERT INTO ITEM VALUES('PS5디스크버전', '650,000', '플레이스테이션5 디스크버전');
+INSERT INTO ITEM VALUES('포르쉐911', '200,000,000', '나도 포르쉐 타고 싶다!');
+COMMIT;
